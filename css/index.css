@@ -1,0 +1,103 @@
+@charset "uf-8";
+/* background image for home-page */
+body {
+  background-image: url(/images/pexels-lukas-942802.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+} 
+
+.section [
+
+
+]
+
+
+.text-container p:nth-child(1){
+	font-family: 'Lucida Sans';
+  font-weight: bold;
+  color #6d6d6d;
+	font-size: 22px;
+}
+.text-container p:nth-child(2){
+	font-family: Calibri;
+	font-weight: bold;
+	letter-spacing:1px;
+	color:#1a1a1a;
+  font-size:70px;
+  line-height: 30px;	
+}
+
+/*ordered list attempt 1*/
+
+.text-container ul li {
+  font-family: 'Lucida Sans';
+	color: #403e3e;
+	font-size:20px;
+  line-height:30px;
+}
+
+/* un ordered list; possible remove children below*/
+
+
+/*
+.text-container p:nth-child(3){
+	font-family: 'Lucida Sans';
+	color: #403e3e;
+	font-size:20px;
+  line-height:0px;
+  
+}
+.text-container p:nth-child(4){
+	font-family: 'Lucida Sans';
+	color: #403e3e;
+	font-size:20px;
+  line-height:0px;
+}
+.text-container p:nth-child(5){
+	font-family: 'Lucida Sans';
+	color: #403e3e;
+	font-size:20px;
+  line-height:30px;
+}
+*/
+ 
+.text-container p{
+	margin:45px 0px 25px;
+	line-height:0px;
+}
+
+/* buttons */
+.text-container button{
+	width:130px;
+	height:42px;
+	border-radius:10px;
+	font-family:'Lucida Sans';
+	font-weight:bold;
+	font-size: 14px;
+	outline:none;
+	margin:0px 10px;
+}
+
+/* move whole container inwards */
+.text-container{
+	position: absolute;
+	left:13%;
+	top:42%;
+  transform:translate(-13%,-42%);
+}
+.mystory-btn {
+  border: 2px solid #373636;
+  color: #373636;
+}
+
+.cv-btn {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none;
+}
+
+/* make the buttons interactive upon touch */
+button:active {
+  transform: scale(1.1);
+
+}
