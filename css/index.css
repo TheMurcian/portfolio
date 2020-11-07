@@ -25,17 +25,27 @@ body {
 	color:#1a1a1a;
   font-size:70px;
   line-height: 30px;	
+  margin-bottom: 40px;
 }
 
 /*ordered list attempt 1*/
 
 .text-container ul li {
-  list-style-type: "\1F44D";
+  list-style-type: lower-greek;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #403e3e;
   font-size: 20px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
+
+.text-container nobr {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #403e3e;
+}
+
+
 /* un ordered list; possible remove children below*/
 
 /*
@@ -68,11 +78,11 @@ body {
 }
 
 /* move whole container inwards */
-.text-container{
+.text-container {
 	position: absolute;
-	left:20%;
-	top:42%;
-  transform:translate(-20%,-42%);
+	left:25%;
+	top:50%;
+  transform:translate(-25%,-50%);
 }
 
 /* buttons */
@@ -84,7 +94,8 @@ body {
 	font-weight:bold;
 	font-size: 14px;
 	outline:none;
-	margin:0px 10px;
+  margin:0px 10px;
+  margin-top: 20px;
 }
 
 .mystory-btn {
@@ -110,18 +121,99 @@ button:active {
 }
 
 /* moving/situating image */
+/*
 .profilepic {
   width: 300px;
   clip-path: circle();
   position: absolute;
   bottom: 250px;
   left: 80%;
-  transform: translateX(-70%); 
+  transform: translateX(-80%);
 }
 
 .profilepic:hover {
-  background-image: url(images/codedylan2.jpg);
+  width: 300px;
+  background: url(/images/codedylan2.jpg);
+  clip-path: circle();
+  position: absolute;
+  bottom: 250px;
+  left: 80%;
+  transform: translateX(-80%);
+  opacity: 0;
+} */
+
+
+/* another attempt at pic transition */
+/*
+#profilepic {
+  width: 300px;
+  background: url(/images/blackwhite.jpg);
+  clip-path: circle();
+  position: absolute;
+  bottom: 250px;
+  left: 80%;
+  transform: translateX(-80%);
 }
 
+#profilepic:hover {
+  width: 300px;
+  background: url(/images/codedylan2.jpg);
+  clip-path: circle();
+  position: absolute;
+  bottom: 250px;
+  left: 80%;
+  transform: translateX(-80%);
+  opacity: 1;
+} */
+
+/* this worked! Now figure out how to do it internally with images.. */
+/*
+#Library {
+  height: 200px;
+  width: 300px;
+  clip-path: circle();
+  position: absolute;
+  bottom: 250px;
+  left: 80%;
+  transform: translateX(-80%);
+}
+
+#Library:hover {
+  content: url('http://www.furrytalk.com/wp-content/uploads/2010/05/2.jpg');
+  height: 200px;
+  width: 300px;
+  clip-path: circle();
+  position: absolute;
+  bottom: 250px;
+  left: 80%;
+  transform: translateX(-80%);
+} */
+
+/* transition effects for profile pic */
+#profilepic {
+  height: 250px;
+  width: 350px;
+  clip-path: circle();
+  position: absolute;
+  bottom: 275px;
+  left: 85%;
+  transform: translateX(-85%);
+}
+
+/* transition for pic not working.. */
+#profilepic {
+  transition: all 2s linear;
+}
+
+#profilepic:hover {
+  content: url(/images/dylanemojiUpload\ -\ Copy.jpg);
+  height: 250px;
+  width: 350px;
+  clip-path: circle();
+  position: absolute;
+  bottom: 275px;
+  left: 85%;
+  transform: translateX(-85%);
+}
 
 /* animations: .text-container */
