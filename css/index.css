@@ -6,19 +6,19 @@ body {
   background-attachment: fixed;
 } 
 
-.section [
+.section {
 
-
-]
-
-
-.text-container p:nth-child(1){
-	font-family: 'Lucida Sans';
-  font-weight: bold;
-  color #6d6d6d;
-	font-size: 22px;
 }
-.text-container p:nth-child(2){
+
+
+/*container */
+.text-container p:nth-child(1) {
+	font-family:'Lucida Sans';
+  font-weight:bold;
+  color: #6d6d6d;
+	font-size:22px;
+}
+.text-container p:nth-child(2) {
 	font-family: Calibri;
 	font-weight: bold;
 	letter-spacing:1px;
@@ -30,44 +30,53 @@ body {
 /*ordered list attempt 1*/
 
 .text-container ul li {
-  font-family: 'Lucida Sans';
-	color: #403e3e;
-	font-size:20px;
-  line-height:30px;
+  list-style-type: "\1F44D";
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #403e3e;
+  font-size: 20px;
+  line-height: 20px;
 }
-
 /* un ordered list; possible remove children below*/
-
 
 /*
 .text-container p:nth-child(3){
 	font-family: 'Lucida Sans';
 	color: #403e3e;
 	font-size:20px;
-  line-height:0px;
-  
+  line-height: 0px;  
 }
+
 .text-container p:nth-child(4){
 	font-family: 'Lucida Sans';
 	color: #403e3e;
 	font-size:20px;
-  line-height:0px;
+  line-height: 0px;
 }
+
 .text-container p:nth-child(5){
 	font-family: 'Lucida Sans';
 	color: #403e3e;
 	font-size:20px;
-  line-height:30px;
-}
+  line-height: 0px;
+} 
 */
+
  
 .text-container p{
 	margin:45px 0px 25px;
 	line-height:0px;
 }
 
+/* move whole container inwards */
+.text-container{
+	position: absolute;
+	left:20%;
+	top:42%;
+  transform:translate(-20%,-42%);
+}
+
 /* buttons */
-.text-container button{
+.text-container button {
 	width:130px;
 	height:42px;
 	border-radius:10px;
@@ -78,13 +87,6 @@ body {
 	margin:0px 10px;
 }
 
-/* move whole container inwards */
-.text-container{
-	position: absolute;
-	left:13%;
-	top:42%;
-  transform:translate(-13%,-42%);
-}
 .mystory-btn {
   border: 2px solid #373636;
   color: #373636;
@@ -96,8 +98,30 @@ body {
   border: none;
 }
 
-/* make the buttons interactive upon touch */
+/* interactive + hover over my story */
 button:active {
   transform: scale(1.1);
-
 }
+
+.mystory-btn:hover {
+  border: 2px solid #373636;
+  color: #ffffff;
+  background-color: #81450c;
+}
+
+/* moving/situating image */
+.profilepic {
+  width: 300px;
+  clip-path: circle();
+  position: absolute;
+  bottom: 250px;
+  left: 80%;
+  transform: translateX(-70%); 
+}
+
+.profilepic:hover {
+  background-image: url(images/codedylan2.jpg);
+}
+
+
+/* animations: .text-container */
