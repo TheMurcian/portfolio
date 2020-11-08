@@ -1,4 +1,15 @@
 @charset "uf-8";
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Styling that will overide everything; pushes nav bar to top */
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
 /* background image for home-page */
 body {
   background-image: url(/images/pexels-lukas-942802.jpg);
@@ -6,9 +17,130 @@ body {
   background-attachment: fixed;
 } 
 
-.section {
+/* Logo */
+/*.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  cursor: pointer;
+} */
 
+/* Nav Bar styling */
+.nav-links, a, .cta {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+} 
+
+/* other color for header:   background-color: #c47c39; */
+
+
+/*header css - push the left and right item to far edges of page, leaving items in middle to space between*/
+
+/* Nav Bar 1 */
+/*header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c47c39; 
+  background-color: #24252A;
+  align-items: center;
+  padding: 7px 7%;
 }
+ 
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+*/
+
+
+/*Nav Bar 2 */
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: auto;
+} 
+
+header {
+  display: flex;
+  justify-content: flex-end;
+ /* background-color: #c47c39; */
+  /*background-color: #24252A; */
+  align-items: center;
+  padding: 7px 7%;
+}
+ 
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(36,37,42);
+  border: none;
+  border-radius: 50px;
+}
+
+.nav-links li a:hover {
+  color: #b98643;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(36,37,42);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+
+
 
 
 /*container */
@@ -201,12 +333,9 @@ button:active {
 }
 
 /* transition for pic not working.. */
-#profilepic {
-  transition: all 2s linear;
-}
 
 #profilepic:hover {
-  content: url(/images/dylanemojiUpload\ -\ Copy.jpg);
+  content: url(/images/emoji.final.jpg);
   height: 250px;
   width: 350px;
   clip-path: circle();
