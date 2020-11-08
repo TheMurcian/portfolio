@@ -26,7 +26,7 @@ body {
 } */
 
 /* Nav Bar styling */
-.nav-links, a, .cta {
+.nav-links, a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -83,9 +83,11 @@ body {
 */
 
 
-/*Nav Bar 2 */
+
+
+/*Nav Bar top */
 .logo {
-  height: 50px;
+  height: 75px;
   width: auto;
   border-radius: 50%;
   cursor: pointer;
@@ -98,7 +100,8 @@ header {
  /* background-color: #c47c39; */
   /*background-color: #24252A; */
   align-items: center;
-  padding: 7px 7%;
+  padding: 30px 5%;
+  margin: 0 -5px;
 }
  
 
@@ -114,57 +117,67 @@ header {
 .nav-links li a {
   transition: all 0.3s ease 0s;
   margin-left: 20px;
-  padding: 9px 25px;
+  padding: 9px 20px;
   background-color: rgba(36,37,42);
-  border: none;
+  border-style: solid;
+  border-color: whitesmoke;
   border-radius: 50px;
 }
 
 .nav-links li a:hover {
-  color: #b98643;
+  color: #81450c;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 800;
 }
-
-.cta {
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgba(36,37,42);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
-}
-
-
-
 
 
 
 /*container */
 .text-container p:nth-child(1) {
-	font-family:'Lucida Sans';
+	font-family:'Montserrat', sans-serif;
   font-weight:bold;
   color: #6d6d6d;
-	font-size:22px;
+  font-size:22px;
+  position: relative;
+  animation-name: hi-there;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
+
+/*Animations for nth-child 1*/
+@keyframes hi-there {
+  0%   {left: -1000px;}
+  100% {left: 0}
+}
+
 .text-container p:nth-child(2) {
-	font-family: Calibri;
+	font-family:'Montserrat', sans-serif;
 	font-weight: bold;
 	letter-spacing:1px;
-	color:#1a1a1a;
+	color:#1b1c1f;
   font-size:70px;
+  position: relative;
   line-height: 30px;	
   margin-bottom: 40px;
+  animation-name: dylan;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
 }
+
+/*Animations for nth-child 2*/
+@keyframes dylan {
+  0%   {left: -1000px;}
+  100% {left: 0}
+}
+
+
+
 
 /*ordered list attempt 1*/
 
 .text-container ul li {
   list-style-type: lower-greek;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #403e3e;
   font-size: 20px;
   line-height: 20px;
@@ -172,7 +185,7 @@ header {
 }
 
 .text-container nobr {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #403e3e;
 }
@@ -217,17 +230,27 @@ header {
   transform:translate(-25%,-50%);
 }
 
-/* buttons */
+/* buttons + animation*/
 .text-container button {
 	width:130px;
 	height:42px;
 	border-radius:10px;
-	font-family:'Lucida Sans';
+	font-family: 'Montserrat', sans-serif;
 	font-weight:bold;
 	font-size: 14px;
 	outline:none;
   margin:0px 10px;
   margin-top: 20px;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .mystory-btn {
@@ -236,7 +259,7 @@ header {
 }
 
 .cv-btn {
-  background-color: #0b0b0b;
+  background-color: #1b1c1f;
   color: #ffffff;
   border: none;
 }
@@ -251,6 +274,8 @@ button:active {
   color: #ffffff;
   background-color: #81450c;
 }
+
+
 
 /* moving/situating image */
 /*
