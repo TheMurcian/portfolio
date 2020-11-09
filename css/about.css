@@ -1,0 +1,234 @@
+
+@charset "uf-8";
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+} */
+
+/*fixing styling issue: white space between sections and page*/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/images/pexels-lukas-942802.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+/* Nav Bar styling */
+.nav-links, a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+} 
+
+/*Nav Bar top */
+.logo {
+  height: 75px;
+  width: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: auto;
+} 
+
+header {
+  display: flex;
+  justify-content: flex-end;
+ /* background-color: #c47c39; */
+  /*background-color: #24252A; */
+  align-items: center;
+  padding: 30px 5%;
+  margin: 0 -5px;
+}
+ 
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/*stling nav bar + hover effect*/
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  padding: 9px 20px;
+  background-color: rgba(36,37,42);
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 50px;
+  margin: 0 3px;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  color: #81450c;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 800;
+}
+
+
+
+/*Styling skills-container*/
+.skills-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 30px;
+  height: auto;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(173,124,89);
+}
+
+
+/*styling the sub-headings + icons; separating icon & text*/
+.tech i, .interpersonal i {
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+
+/*history styling - will need to fix this*/
+
+.history {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+footer {
+  background: #f1f1f1;
+  padding: 90px 0;
+}
+
+/* display it as two-column flex */
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: centre;
+  flex-wrap: wrap-reverse;
+}
+
+.logo {
+  height: 75px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: #fc5c65;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover {
+  color: #fc5c65;
+}
+
+.right-col h1 {
+  font-size: 20px;
+}
+
+.border {
+  width: 100px;
+  height: 4px;
+  background: #fc5c65;
+}
+
+.blog-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtb {
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn {
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #f1f1f1;
+  background: #fc5c65;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/*media queries fixing */
+@media screen and (max-width: 900px) {
+  .footer-container {
+    max-width: 600%;
+  }
+  .right-col {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .left-col {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*separating button when minimised*/
+@media screen and (max-width: 700px) {
+  .btn {
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+

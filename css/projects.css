@@ -1,0 +1,97 @@
+@charset "uf-8";
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*basic reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*fixing styling issue: white space between sections and page*/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/images/pexels-lukas-942802.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/*centering in middle of page with Grid Template
+.parent {
+  display: grid;
+  place-items: center;
+} */
+
+h2{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50 -50);
+}
+
+
+/* Nav Bar styling */
+.nav-links, a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+} 
+
+/*Nav Bar top */
+.logo {
+  height: 75px;
+  width: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: auto;
+} 
+
+header {
+  display: flex;
+  justify-content: flex-end;
+ /* background-color: #c47c39; */
+  /*background-color: #24252A; */
+  align-items: center;
+  padding: 30px 5%;
+  margin: 0 -5px;
+}
+ 
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/*stling nav bar + hover effect*/
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  padding: 9px 20px;
+  background-color: rgba(36,37,42);
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 50px;
+  margin: 0 3px;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  color: #81450c;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 800;
+}
