@@ -40,12 +40,13 @@ body {
 
 /*Nav Bar top */
 .logo {
-  height: 75px;
+  height: 50px;
   width: auto;
   border-radius: 50%;
   cursor: pointer;
   margin-right: auto;
-} 
+  border: 1.5px whitesmoke solid; 
+}
 
 header {
   display: flex;
@@ -95,19 +96,17 @@ header {
   height: auto;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   font-family: 'Montserrat', sans-serif;
-  justify-content: flex-end;
   background-color: rgb(173,124,89);
 }
-
-/*need to make some space between .tech & .interpersonal classes*/
-
 
 
 /*styling the sub-headings + icons; separating icon & text*/
 .tech i, .interpersonal i {
   align-items: center;
   margin-right: 10px;
+  padding: 7px;
 }
 
 
@@ -293,7 +292,7 @@ footer {
   background: #50aaff;
 }
 
-/* Social Media: transition effect for 0.4s*/
+/* Social Media: icon transition effect for 0.4s*/
 .social-media a i {
   transition: 0.4s all;
 }

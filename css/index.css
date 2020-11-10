@@ -9,25 +9,32 @@
   margin: 0%;
   padding: 0%;
 }
+---------
 
-/*fixing styling issue: white space between sections and page*/
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* background image for home-page */
+/*fixing styling issue: white space between sections and page*/
 body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
   background-image: url(/images/pexels-lukas-942802.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-} 
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
 
 main {
   min-width: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -43,12 +50,13 @@ main {
 
 /*Nav Bar top */
 .logo {
-  height: 75px;
+  height: 50px;
   width: auto;
   border-radius: 50%;
   cursor: pointer;
   margin-right: auto;
-} 
+  border: 1.5px whitesmoke solid; 
+}
 
 header {
   display: flex;
@@ -57,7 +65,6 @@ header {
   /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
-  margin: 0 -5px;
 }
  
 
@@ -337,7 +344,6 @@ button:active {
 
 
 
-
 /* Footer: styling background and padding */
 footer {
   background: #f1f1f1;
@@ -391,7 +397,7 @@ footer {
   background: #50aaff;
 }
 
-/* Social Media: transition effect for 0.4s*/
+/* Social Media: icon transition effect for 0.4s*/
 .social-media a i {
   transition: 0.4s all;
 }
@@ -405,6 +411,7 @@ footer {
 .right-col h1 {
   font-size: 20px;
 }
+
 
 /* Border: styling*/
 .border {

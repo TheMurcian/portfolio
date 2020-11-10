@@ -10,20 +10,22 @@
 }
 
 /*fixing styling issue: white space between sections and page*/
-html, body {
-  width: 100%;
-  height: 100%;
+body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
-}
-
-body {
   font-family: 'Montserrat', sans-serif;
   background-image: url(/images/pexels-lukas-942802.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  justify-content: space-between;
 }
+
+
+
 
 
 /*centering in middle of page with Grid Template
@@ -45,11 +47,12 @@ body {
 
 /*Nav Bar top */
 .logo {
-  height: 75px;
+  height: 50px;
   width: auto;
   border-radius: 50%;
   cursor: pointer;
   margin-right: auto;
+  border: 1.5px whitesmoke solid;
 } 
 
 header {
@@ -59,7 +62,6 @@ header {
   /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
-  margin: 0 -5px;
 }
  
 
@@ -90,13 +92,23 @@ header {
   font-weight: 800;
 }
 
-
-h2{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50 -50);
+.under-construction {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
 }
+
+.under-construction h2 {
+  max-width: 600px;
+  border: 1px solid blue;
+}
+
+
+
+
 
 
 /* Footer: styling background and padding */
