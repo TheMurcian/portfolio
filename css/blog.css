@@ -5,21 +5,16 @@
 
 
 /*fixing styling issue: white space between sections and page*/
-html, body {
-  width: 100%;
-  height: 100%;
+/*fixed it with 100vw*/
+body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
-}
-
-body {
   font-family: 'Montserrat', sans-serif;
   background-image: url(/images/pexels-lukas-942802.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: 100vw;
+  /*background-attachment: fixed; */
+  background-repeat: no-repeat;
 }
-
 
 
 /* Nav Bar styling */
@@ -47,7 +42,7 @@ header {
   /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
-  margin: 0 -5px;
+  margin: 0;
 }
 
 .nav-links {
@@ -77,5 +72,162 @@ header {
   font-weight: 800;
 }
 
-/*do inverted pancake method google yt 
-grid template */
+/*Styling and organising the blog layout #1*/
+
+.blogroll {
+  width: 55%;
+  padding: 65px;
+  margin: auto;
+  font: 1rem 'Montserrat', sans-serif;
+  background: none;
+  margin-top: 100px;
+  overflow-x: scroll;
+}
+
+/*
+.blogroll {
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 1.2rem;
+  olor: #81450c; 
+  color: #2c3e50;
+  ;
+ */
+
+
+.pics {
+  height: 300px;
+  max-width: 400px;
+  border-radius: 50px;
+}
+
+.pics:hover {
+  opacity: 0.5;
+}
+
+
+.posts {
+  background: #e1d1c1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.posts > h2,
+.posts > p {
+  margin: .2rem;
+  font-size: 1rem;
+} 
+
+/*Styling and organising the blog layout #2*/
+/*
+.blogroll {
+  background: #d7b787;
+  width: 50%;
+  padding: 40px;
+  margin: auto;
+} */
+
+
+
+
+/* Footer: styling background and padding */
+footer {
+  background: #f1f1f1;
+  padding: 40px 0;
+}
+
+/* Responsive display display as two-column flex, evenly + wrap*/
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: centre;
+  flex-wrap: wrap-reverse;
+}
+
+/* Logo: styling, weight + height*/
+.logo {
+  height: 75px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/*Social media styling: flexbox + wrap for responsive design*/
+.social-media {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Social Media: styling, animations + transition*/
+.social-media a{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background: #2c3e50;
+  color: whitesmoke;
+  margin: 0 6px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-size: 27px;
+}
+
+/* Social Media: new background colour with hover*/
+.social-media a:hover {
+  background: #50aaff;
+}
+
+/* Social Media: transition effect for 0.4s*/
+.social-media a i {
+  transition: 0.4s all;
+}
+
+/* Social Media: rotatng animation/transition effect with hover*/
+.social-media a:hover > i {
+  transform: scale(1.6) rotate(25deg);
+}
+
+/* right column h1*/
+.right-col h1 {
+  font-size: 20px;
+}
+
+/* Border: styling*/
+.border {
+  width: 100px;
+  height: 4px;
+  background: #81450c;
+}
+
+
+/*media queries fixing */
+@media screen and (max-width: 900px) {
+  .footer-container {
+    max-width: 600%;
+  }
+  .right-col {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .left-col {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*separating button when minimised*/
+@media screen and (max-width: 700px) {
+  .btn {
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
