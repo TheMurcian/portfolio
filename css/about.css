@@ -260,7 +260,7 @@ footer {
 .logo {
   height: 75px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 /*Social media styling: flexbox + wrap for responsive design*/
@@ -297,7 +297,7 @@ footer {
   transition: 0.4s all;
 }
 
-/* Social Media: rotatng animation/transition effect with hover*/
+/* Social Media: rotating animation/transition effect with hover*/
 .social-media a:hover > i {
   transform: scale(1.6) rotate(25deg);
 }

@@ -108,12 +108,13 @@ header {
 
 
 .posts {
-  background: #e1d1c1;
+  background: #f1f1f1;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
+  border-bottom: 2px solid #81450c;
 }
 
 .posts > h2,
@@ -155,7 +156,7 @@ footer {
 .logo {
   height: 75px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 /*Social media styling: flexbox + wrap for responsive design*/

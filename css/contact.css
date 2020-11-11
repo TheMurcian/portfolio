@@ -36,9 +36,9 @@ body {
 
 /*Nav Bar top */
 .logo {
-  height: 50px;
+  height: 75px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 60%;
   cursor: pointer;
   margin-right: auto;
   border: 1.5px whitesmoke solid;

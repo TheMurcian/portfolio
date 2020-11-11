@@ -347,7 +347,7 @@ button:active {
 /* Footer: styling background and padding */
 footer {
   background: #f1f1f1;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 /* Responsive display display as two-column flex, evenly + wrap*/
@@ -365,7 +365,7 @@ footer {
 .logo {
   height: 75px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 /*Social media styling: flexbox + wrap for responsive design*/
