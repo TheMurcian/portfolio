@@ -14,7 +14,10 @@ body {
   background-size: 100vw;
   /*background-attachment: fixed; */
   background-repeat: no-repeat;
+  /* background-color: #955f31; */
 }
+
+
 
 
 /* Nav Bar styling */
@@ -114,7 +117,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  border-bottom: 2px solid #81450c;
+  border-bottom: 30px solid white;
 }
 
 .posts > h2,
@@ -122,6 +125,20 @@ header {
   margin: .2rem;
   font-size: 1rem;
 } 
+
+h1 {
+  color: #204d48;
+  font-style: italic;
+
+}
+
+h2 {
+  color: #c18d7f;
+}
+
+p {
+  color: #5b3511;
+}
 
 /*Styling and organising the blog layout #2*/
 /*
@@ -206,7 +223,7 @@ footer {
 /* Border: styling*/
 .border {
   width: 100px;
-  height: 4px;
+  height: 10px;
   background: #81450c;
 }
 

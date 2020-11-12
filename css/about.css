@@ -305,6 +305,7 @@ footer {
 /* right column h1*/
 .right-col h1 {
   font-size: 20px;
+  padding: 20;
 }
 
 /* Border: styling*/

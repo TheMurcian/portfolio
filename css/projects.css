@@ -104,6 +104,11 @@ header {
 .under-construction h2 {
   max-width: 600px;
   border: 1px solid blue;
+  padding-bottom: 30px;
+}
+
+.under-construction p {
+  max-width: 600px;
 }
 
 
