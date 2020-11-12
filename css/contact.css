@@ -7,20 +7,24 @@
 
 
 /*fixing styling issue: white space between sections and page*/
+
+
 body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
-  background-size: 100vw;
   font-family: 'Montserrat', sans-serif;
   background-image: url(/images/pexels-lukas-942802.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  /*display: flex;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
   justify-content: space-between;
-  flex-direction: column; */
+  overflow-x: hidden;
+  
 }
 
 
@@ -90,37 +94,52 @@ header {
 .form {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   min-height: 300px;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
   }
   
   .form h2 {
     max-width: 600px;
-    border: 1px solid blue;
   }
 
-  .form p {
-    border: 1px solid blue;
 
+.form p {
+  padding: 15px;
+}
+ 
+  .txtb {
+    border:2.5px #81450c solid;
+    border-radius: 50px;
+    padding: 8px;
   }
 
-  /* .border {
-    color: teal;
-  } */
+
+ .btn {
+   border-radius: 50px;
+   /* padding: 5px; */
+   padding: 8px;
+   background-color: #1b1c1f;
+   color: #ffffff;
+   font-weight: 600;
+   
+ }
+
+
+ .btn:active {
+  transform: scale(1.1);
+}
+
+.btn:hover {
+  color:  #ffffff;
+  background-color: #43a4ff;
+  font-weight: 700;
+}
 
 
 
 
-
-
-
-
-
-
-
-.btn (use similar for other button)
 
 
 
@@ -204,7 +223,8 @@ footer {
 
 /*making the professional & social pages/links distinguished*/
 .form a {
-  color: #b33a3a;
+  color: #a31d14;
+  font-weight: 800;
 }
 
 /*just make different colours*/

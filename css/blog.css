@@ -7,14 +7,22 @@
 /*fixing styling issue: white space between sections and page*/
 /*fixed it with 100vw*/
 body {
+  width: 100%;
+  height: 100%;
   margin: 0px;
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
   background-image: url(/images/pexels-lukas-942802.jpg);
   background-size: 100vw;
-  /*background-attachment: fixed; */
   background-repeat: no-repeat;
-  /* background-color: #955f31; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
@@ -80,12 +88,13 @@ header {
 
 .blogroll {
   width: 55%;
-  padding: 65px;
+  padding: 20px;
   margin: auto;
   font: 1rem 'Montserrat', sans-serif;
   background: none;
   margin-top: 100px;
-  overflow-x: scroll;
+  overflow-x: hidden;
+
 }
 
 /*
@@ -117,7 +126,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  border-bottom: 30px solid white;
+  border-bottom: 30px solid rgb(255, 255, 255);
 }
 
 .posts > h2,
@@ -126,7 +135,7 @@ header {
   font-size: 1rem;
 } 
 
-h1 {
+.blogroll h1 {
   color: #204d48;
   font-style: italic;
 

@@ -47,7 +47,7 @@ body {
 
 /*Nav Bar top */
 .logo {
-  height: 75px;
+  height: 60px;
   width: auto;
   border-radius: 60%;
   cursor: pointer;
@@ -95,7 +95,6 @@ header {
 .under-construction {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   min-height: 300px;
   justify-content: center;
   align-items: center;
@@ -103,7 +102,6 @@ header {
 
 .under-construction h2 {
   max-width: 600px;
-  border: 1px solid blue;
   padding-bottom: 30px;
 }
 
