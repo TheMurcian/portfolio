@@ -24,7 +24,10 @@ body {
   background-repeat: no-repeat;
   justify-content: space-between;
   overflow-x: hidden;
-  
+}
+
+.main {
+  padding: 100px 0 100px 0;
 }
 
 
@@ -51,8 +54,6 @@ body {
 header {
   display: flex;
   justify-content: flex-end;
- /* background-color: #c47c39; */
-  /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
   margin: 0 -5px;
@@ -61,14 +62,15 @@ header {
 
 .nav-links {
   list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
+  display: flex;
+  /* padding: 0px 20px; */
 }
 
-/*stling nav bar + hover effect*/
+/*styling nav bar + hover effect*/
 .nav-links li a {
   transition: all 0.3s ease 0s;
   padding: 9px 20px;
@@ -230,19 +232,43 @@ footer {
 /*just make different colours*/
 .form a:hover {
   color: #43a4ff;
-  
 }
 
 
 
 /*media queries fixing */
+
+
+/* Break point for navbar */
+
+
+
+/* .main {
+ padding-bottom: 20px;
+} */
+
+
+
 @media screen and (max-width: 900px) {
+   header {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .logo {
+     margin: auto;
+   }
+  
+  .nav-links {
+    display: flex;
+    padding-left: 0;
+  }
   .footer-container {
     max-width: 600%;
   }
   .right-col {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   .left-col {
     width: 100%;
@@ -254,7 +280,9 @@ footer {
 @media screen and (max-width: 700px) {
   .btn {
     margin: 0;
-    width: 100%;
+    width: 50%;
     margin-top: 20px;
   }
 }
+
+
