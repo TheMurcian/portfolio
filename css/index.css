@@ -147,12 +147,10 @@ header {
   line-height: 0px;
 }
 
-/* move whole container inwards */
 .text-container {
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  transform: translate(-25%, -50%);
+  max-width: 1000px;
+  margin: 12px auto;
+  padding: 15px;
 }
 
 /* buttons + animation*/
@@ -317,15 +315,21 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  body {
+  #profilepic {
+    display: none;
+  }
     
   }
   .logo {
     margin: auto;
   }
 
-  .text-container {
+  /* .text-container {
     height: 50vh;
+  } */
+
+  .text-container p:nth-child(2) {
+    font-size: 50px;
   }
 
   .nav-links {
@@ -357,9 +361,4 @@ footer {
   #profilepic {
     display: none;
   }
-
-  /* main {
-    display: flex;
-    flex-direction: column;
-  } */
 }

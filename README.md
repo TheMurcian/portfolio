@@ -28,7 +28,7 @@ Screen Shots:
 
 Functionality: 
 - This site includes a landing page, about-me page, a blog, as well as a page for contact
-- Balsamiq was employed to design and impliment wireframes.
+- Balsamiq was employed to design and implement wireframes.
 - A responsive home page with a few transition effects and animations which immediately seek to introduce the viewer to my site as well as an indication of my identity, passions, and aspirations 
 - An integrated Nav Bar that is responsive and accessible across all of the site's pages, linking to their appropriate locations within the various pages/html files.
 - A responsive footer which home's several links to my professional and social media platforms and pages, and also is accessible at the bottom of each page.  
