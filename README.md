@@ -22,8 +22,7 @@ https://dylanestebanportfolio.netlify.app/
 Purpose: this website was built to provide application of working knowledge of HTML and CSS. Moreover, it was designed to create an online presence for myself as a future developer, as well as produce a repository and illustration for future projects to demonstrate my passions, interests, and most improtantly, my work and skills. 
 
 Screen Shots:
-![appearance of link](/home/dylan/code/CoderAcademy/projects/portfolio/sitemap/sitemap-final.xml)
-
+![SiteMap](./docs/sitemap.png)
 
 
 Functionality: 

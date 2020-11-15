@@ -340,7 +340,7 @@ footer {
     max-width: 600%;
   }
   .right-col {
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 60px;
   }
   .left-col {
@@ -349,7 +349,7 @@ footer {
   }
 
 
-}
+
 
 /*separating button when minimised*/
 @media screen and (max-width: 700px) {
