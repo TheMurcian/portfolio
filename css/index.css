@@ -343,10 +343,6 @@ footer {
   }
 
 
-
-
-
-
 }
 
 /*separating button when minimised*/
@@ -356,4 +352,12 @@ footer {
     width: 100%;
     margin-top: 20px;
   }
+  #profilepic {
+    display: none;
+  }
+
+  /* main {
+    display: flex;
+    flex-direction: column;
+  } */
 }

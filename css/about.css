@@ -95,6 +95,7 @@ header {
   padding: 50px;
   /* padding-left: 90px; */
   background-color: white;
+  padding: 30px;
 }
 
 /* styling the icons  */
@@ -378,7 +379,7 @@ footer {
     width: 100%;
   }
   .skills {
-    height: 50vh;
+    height: 75vh;
   }
  
   .tech, .interpersonal {
