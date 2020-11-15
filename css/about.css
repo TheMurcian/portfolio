@@ -3,74 +3,68 @@
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-/*
-* {
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
-} */
 
-/*fixing styling issue: white space between sections and page*/
-html,
 body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/images/pexels-lukas-942802.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  justify-content: space-between;
   overflow-x: hidden;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  background-image: url(/images/pexels-lukas-942802.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 /* Nav Bar styling */
-.nav-links,
-a {
-  font-family: "Montserrat", sans-serif;
+.nav-links, a {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
-}
+} 
 
 /*Nav Bar top */
 .logo {
-  height: 50px;
+  height: 75px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 60%;
   cursor: pointer;
   margin-right: auto;
   border: 1.5px whitesmoke solid;
-}
+} 
 
 header {
   display: flex;
   justify-content: flex-end;
-  /* background-color: #c47c39; */
-  /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
   margin: 0 -5px;
 }
+ 
 
 .nav-links {
   list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
+  display: flex;
+  /* padding: 0px 20px; */
 }
 
-/*stling nav bar + hover effect*/
+/*styling nav bar + hover effect*/
 .nav-links li a {
   transition: all 0.3s ease 0s;
   padding: 9px 20px;
-  background-color: rgba(36, 37, 42);
+  background-color: rgba(36,37,42);
   border-style: solid;
   border-color: whitesmoke;
   border-radius: 50px;
@@ -84,6 +78,11 @@ header {
   font-weight: 800;
 }
 
+
+
+
+
+/* styling the columns */
 .about-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -473,6 +472,19 @@ footer {
 
 /*media queries fixing */
 @media screen and (max-width: 900px) {
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      margin: auto;
+    }
+   
+   .nav-links {
+     display: flex;
+     padding-left: 0;
+   }
   .footer-container {
     max-width: 600%;
   }

@@ -1,36 +1,7 @@
 @charset "uf-8";
 
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-/* Styling that will overide everything; pushes nav bar to top */
-* {
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
-}
----------
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*fixing styling issue: white space between sections and page*/
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Montserrat', sans-serif;
-  background-image: url(/images/pexels-lukas-942802.jpg);
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  justify-content: space-between;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 main {
   min-width: 100vh;
@@ -39,49 +10,66 @@ main {
   flex-direction: column;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/images/pexels-lukas-942802.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
 /* Nav Bar styling */
-.nav-links, a {
-  font-family: 'Montserrat', sans-serif;
+.nav-links,
+a {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
-} 
+}
 
 /*Nav Bar top */
 .logo {
-  height: 50px;
+  height: 75px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 60%;
   cursor: pointer;
   margin-right: auto;
-  border: 1.5px whitesmoke solid; 
+  border: 1.5px whitesmoke solid;
 }
 
 header {
   display: flex;
   justify-content: flex-end;
- /* background-color: #c47c39; */
-  /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
+  margin: 0 -5px;
 }
- 
 
 .nav-links {
   list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
+  display: flex;
+  /* padding: 0px 20px; */
 }
 
-/*stling nav bar + hover effect*/
+/*styling nav bar + hover effect*/
 .nav-links li a {
   transition: all 0.3s ease 0s;
   padding: 9px 20px;
-  background-color: rgba(36,37,42);
+  background-color: rgba(36, 37, 42);
   border-style: solid;
   border-color: whitesmoke;
   border-radius: 50px;
@@ -95,14 +83,12 @@ header {
   font-weight: 800;
 }
 
-
-
 /*container */
 .text-container p:nth-child(1) {
-	font-family:'Montserrat', sans-serif;
-  font-weight:bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #6d6d6d;
-  font-size:22px;
+  font-size: 22px;
   position: relative;
   animation-name: hi-there;
   animation-duration: 1.5s;
@@ -111,18 +97,22 @@ header {
 
 /*Animations for nth-child 1*/
 @keyframes hi-there {
-  0%   {left: -1000px;}
-  100% {left: 0}
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .text-container p:nth-child(2) {
-	font-family:'Montserrat', sans-serif;
-	font-weight: bold;
-	letter-spacing:1px;
-	color:#1b1c1f;
-  font-size:70px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1b1c1f;
+  font-size: 70px;
   position: relative;
-  line-height: 30px;	
+  line-height: 30px;
   margin-bottom: 40px;
   animation-name: dylan;
   animation-duration: 5.5s;
@@ -131,18 +121,19 @@ header {
 
 /*Animations for nth-child 2*/
 @keyframes dylan {
-  0%   {left: -1000px;}
-  100% {left: 0}
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
 }
-
-
-
 
 /*ordered list attempt 1*/
 
 .text-container ul li {
   list-style-type: lower-greek;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #403e3e;
   font-size: 20px;
   line-height: 20px;
@@ -150,11 +141,10 @@ header {
 }
 
 .text-container nobr {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #403e3e;
 }
-
 
 /* un ordered list; possible remove children below*/
 
@@ -181,30 +171,29 @@ header {
 } 
 */
 
- 
-.text-container p{
-	margin:45px 0px 25px;
-	line-height:0px;
+.text-container p {
+  margin: 45px 0px 25px;
+  line-height: 0px;
 }
 
 /* move whole container inwards */
 .text-container {
-	position: absolute;
-	left:25%;
-	top:50%;
-  transform:translate(-25%,-50%);
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-25%, -50%);
 }
 
 /* buttons + animation*/
 .text-container button {
-	width:130px;
-	height:42px;
-	border-radius:10px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:bold;
-	font-size: 14px;
-	outline:none;
-  margin:0px 10px;
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 0px 10px;
   margin-top: 20px;
   opacity: 0;
   animation-name: btn;
@@ -214,8 +203,12 @@ header {
 }
 
 @keyframes btn {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .mystory-btn {
@@ -241,12 +234,10 @@ button:active {
 }
 
 .cv-btn:hover {
-  color:  #ffffff;
+  color: #ffffff;
   background-color: #81450c;
   font-weight: 800;
 }
-
-
 
 /* moving/situating image */
 /*
@@ -269,7 +260,6 @@ button:active {
   transform: translateX(-80%);
   opacity: 0;
 } */
-
 
 /* another attempt at pic transition */
 /*
@@ -341,9 +331,6 @@ button:active {
   transform: translateX(-85%);
 }
 
-
-
-
 /* Footer: styling background and padding */
 footer {
   background: #f1f1f1;
@@ -378,7 +365,7 @@ footer {
 }
 
 /* Social Media: styling, animations + transition*/
-.social-media a{
+.social-media a {
   display: inline-flex;
   width: 50px;
   height: 50px;
@@ -412,7 +399,6 @@ footer {
   font-size: 20px;
 }
 
-
 /* Border: styling*/
 .border {
   width: 100px;
@@ -420,9 +406,21 @@ footer {
   background: #81450c;
 }
 
-
 /*media queries fixing */
 @media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    margin: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    padding-left: 0;
+  }
   .footer-container {
     max-width: 600%;
   }

@@ -21,11 +21,7 @@ body {
   background-repeat: no-repeat;
   justify-content: space-between;
   overflow-x: hidden;
-  background-attachment: fixed;
-  background-position: center;
 }
-
-
 
 
 /* Nav Bar styling */
@@ -39,34 +35,34 @@ body {
 
 /*Nav Bar top */
 .logo {
-  height: 50px;
+  height: 75px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 60%;
   cursor: pointer;
   margin-right: auto;
-  border: 1.5px whitesmoke solid; 
-}
+  border: 1.5px whitesmoke solid;
+} 
 
 header {
   display: flex;
   justify-content: flex-end;
- /* background-color: #c47c39; */
-  /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
-  margin: 0;
+  margin: 0 -5px;
 }
+ 
 
 .nav-links {
   list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
+  display: flex;
+  /* padding: 0px 20px; */
 }
 
-/*stling nav bar + hover effect*/
+/*styling nav bar + hover effect*/
 .nav-links li a {
   transition: all 0.3s ease 0s;
   padding: 9px 20px;
@@ -83,6 +79,7 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   font-weight: 800;
 }
+
 
 /*Styling and organising the blog layout #1*/
 
@@ -238,6 +235,19 @@ footer {
 
 /*media queries fixing */
 @media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    margin: auto;
+  }
+ 
+ .nav-links {
+   display: flex;
+   padding-left: 0;
+ }
   .footer-container {
     max-width: 600%;
   }
@@ -259,3 +269,4 @@ footer {
     margin-top: 20px;
   }
 }
+

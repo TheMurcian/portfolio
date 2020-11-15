@@ -9,6 +9,10 @@
 /*fixing styling issue: white space between sections and page*/
 
 
+.main {
+  padding: 100px 0 100px 0;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -25,11 +29,6 @@ body {
   justify-content: space-between;
   overflow-x: hidden;
 }
-
-.main {
-  padding: 100px 0 100px 0;
-}
-
 
 
 /* Nav Bar styling */
@@ -284,5 +283,7 @@ footer {
     margin-top: 20px;
   }
 }
+
+
 
 

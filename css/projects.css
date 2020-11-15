@@ -9,8 +9,10 @@
   padding: 0;
 }
 
-/*fixing styling issue: white space between sections and page*/
+
 body {
+  width: 100%;
+  height: 100%;
   margin: 0px;
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
@@ -22,18 +24,8 @@ body {
   flex-direction: column;
   background-repeat: no-repeat;
   justify-content: space-between;
+  overflow-x: hidden;
 }
-
-
-
-
-
-/*centering in middle of page with Grid Template
-.parent {
-  display: grid;
-  place-items: center;
-} */
-
 
 
 /* Nav Bar styling */
@@ -47,7 +39,7 @@ body {
 
 /*Nav Bar top */
 .logo {
-  height: 60px;
+  height: 75px;
   width: auto;
   border-radius: 60%;
   cursor: pointer;
@@ -58,23 +50,23 @@ body {
 header {
   display: flex;
   justify-content: flex-end;
- /* background-color: #c47c39; */
-  /*background-color: #24252A; */
   align-items: center;
   padding: 30px 5%;
+  margin: 0 -5px;
 }
  
 
 .nav-links {
   list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
+  display: flex;
+  /* padding: 0px 20px; */
 }
 
-/*stling nav bar + hover effect*/
+/*styling nav bar + hover effect*/
 .nav-links li a {
   transition: all 0.3s ease 0s;
   padding: 9px 20px;
@@ -91,6 +83,12 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   font-weight: 800;
 }
+
+
+
+
+
+
 
 .under-construction {
   display: flex;
@@ -191,7 +189,23 @@ footer {
 
 
 /*media queries fixing */
+
+
+
 @media screen and (max-width: 900px) {
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      margin: auto;
+    }
+   
+   .nav-links {
+     display: flex;
+     padding-left: 0;
+   }
   .footer-container {
     max-width: 600%;
   }
@@ -213,3 +227,5 @@ footer {
     margin-top: 20px;
   }
 }
+
+
