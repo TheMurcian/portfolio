@@ -119,9 +119,7 @@ header {
 
 .tech h3,
 .interpersonal h3 {
-  text-transform: uppercase;
   font-size: 20px;
-  letter-spacing: 4.5px;
   opacity: 0.9;
 }
 
@@ -140,9 +138,7 @@ header {
 }
 /* styling heading  */
 .content h2 {
-  text-transform: uppercase;
   font-size: 25px;
-  letter-spacing: 6px;
   opacity: 0.9;
 }
 
