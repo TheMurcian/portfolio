@@ -3,19 +3,14 @@
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-/* main {
-  min-width: 100vh;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
+
 
 body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-image: url(/images/pexels-lukas-942802.jpg);
   background-size: 100vw;
   background-repeat: no-repeat;
@@ -224,7 +219,7 @@ button:active {
   position: absolute;
   bottom: 275px;
   left: 85%;
-  /* transform: translateX(-85%); */
+  transform: translateX(-85%);
 }
 
 /* transition for pic not working.. */
@@ -237,7 +232,7 @@ button:active {
   position: absolute;
   bottom: 275px;
   left: 85%;
-  /* transform: translateX(-85%); */
+  transform: translateX(-85%);
 }
 
 /* Footer: styling background and padding */
@@ -322,8 +317,15 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  body {
+    
+  }
   .logo {
     margin: auto;
+  }
+
+  .text-container {
+    height: 50vh;
   }
 
   .nav-links {
