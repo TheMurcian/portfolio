@@ -55,7 +55,6 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 5%;
-  margin: 0 -5px;
 }
  
 
@@ -283,6 +282,8 @@ footer {
     margin-top: 20px;
   }
 }
+
+
 
 
 

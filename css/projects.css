@@ -52,7 +52,6 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 5%;
-  margin: 0 -5px;
 }
  
 
@@ -227,5 +226,12 @@ footer {
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .under-construction p {
+    padding: 15px;
+    font-size: 15px;  
+  }
+
 
 
