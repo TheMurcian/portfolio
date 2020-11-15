@@ -218,6 +218,10 @@ header {
   background-color: white;
 }
 
+.history p {
+  padding: 0 25px 0 25px;
+}
+
 .background {
   width: 100%;
 }
